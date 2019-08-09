@@ -1,3 +1,4 @@
+import { StylingParams } from 'types/styling-params';
 import { ComposeParams } from "types/compose-params";
 
 export class ModalService {
@@ -8,16 +9,22 @@ export class ModalService {
   // subscriber to the closing modal id
   closingModalSubscriber: any;
 
-  modalID: number;
-
 
   /**
    * trigger opening a modal using compose from params
-   * @param composeParams (id, viewModel?, view?, model?)
+   * @param composeParams (viewModel?, view?, model?)
+   * @param stylingParams (height, width, minHeight, minWidth)
    */
-  openModal(composeParams: ComposeParams) {
-    // push modal params to array
-    this.modals.push(composeParams);
+  openModal(composeParams: ComposeParams, stylingParams?: StylingParams) {
+    // push modal params to array including the style
+
+    const modalParams = {
+      viewModel: composeParams.viewModel,
+      view: composeParams.view,
+      model: composeParams.model,
+      styling: stylingParams
+    }
+    this.modals.push(modalParams);
   }
 
   closeModal(retVal?: any) {

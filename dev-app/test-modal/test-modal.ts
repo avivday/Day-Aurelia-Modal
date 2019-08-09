@@ -6,8 +6,6 @@ export class TestModal {
 
   constructor(private modalService: ModalService) { }
 
-  height: "40px";
-
   open() {
     this.modalService.openModal({viewModel: "test-modal/inside-modal/inside-modal"});
   }

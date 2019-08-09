@@ -1,4 +1,4 @@
-import {bindable} from 'aurelia-framework';
+import {bindable, computedFrom} from 'aurelia-framework';
 
 export class Modal {
   // Modal Params
@@ -8,8 +8,6 @@ export class Modal {
   public view: string;
   @bindable()
   public model: any;
-
-
 
 
 }
