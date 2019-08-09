@@ -10,6 +10,5 @@ export class App {
 
   open() {
     this.modalService.openModal({viewModel: "test-modal/test-modal"});
-    this.modalContainer.classList.add("day-modal-container");
   }
 }
