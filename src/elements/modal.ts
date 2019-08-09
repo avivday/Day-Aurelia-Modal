@@ -1,23 +1,15 @@
-import { ModalService } from './../services/modal-service';
-import {bindable, autoinject} from 'aurelia-framework';
+import {bindable} from 'aurelia-framework';
 
-@autoinject()
 export class Modal {
   // Modal Params
-  @bindable id: number;
-  @bindable viewModel: string;
-  @bindable view: string;
-  @bindable model: any;
+  @bindable()
+  public viewModel: string;
+  @bindable()
+  public view: string;
+  @bindable()
+  public model: any;
 
-  // Modal Styling Binds
-  @bindable height: string;
 
-  modalCss: string;
 
-  constructor(private modalService: ModalService) {
-  }
 
-  closeModal() {
-    this.modalService.closeModal(this.id);
-  }
 }
