@@ -1,0 +1,7 @@
+<template>
+  <require from="./modal"></require>
+  <div class="day-modal-container" if.bind="modalService.modals.length">
+      <modal class="day-modal-opacity" repeat.for="modal of modalService.modals" view-model.bind="modal.viewModel"
+      view.bind="modal.view" model.bind="modal.model"></modal>
+  </div>
+</template>

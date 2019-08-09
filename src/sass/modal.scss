@@ -1,0 +1,34 @@
+// Modal Stylesheet
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.day-modal-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.day-modal-opacity {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.day-modal-body {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
