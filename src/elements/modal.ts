@@ -1,6 +1,8 @@
-import { StylingParams } from './../types/styling-params';
-import { bindable, computedFrom } from 'aurelia-framework';
+import { ModalService } from 'services/modal-service';
+import { StylingParams } from 'types/styling-params';
+import { bindable, computedFrom, autoinject } from 'aurelia-framework';
 
+@autoinject()
 export class Modal {
   // Modal Params
   @bindable()
@@ -13,6 +15,8 @@ export class Modal {
   @bindable()
   public styling: StylingParams;
 
+  constructor(private modalService: ModalService) {}
+
   @computedFrom("styling")
   get modalCSS() {
     return {
@@ -23,6 +27,26 @@ export class Modal {
       maxWidth: this.styling.maxWidth,
       width: this.styling.width
     }
+  }
+
+  myData = {
+    name: "Aviv",
+    last: "Day"
+  };
+
+
+  /**
+   * Close this modal directly from html
+   */
+  closeModal(): Promise<{}> {
+    return this.modalService.closeModal();
+  }
+
+  /**
+   * Close all modals directly from html
+   */
+  closeAllModals(): Promise<{}> {
+    return this.modalService.closeAllModals();
   }
 
 }

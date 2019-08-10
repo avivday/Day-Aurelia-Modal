@@ -31,7 +31,28 @@ body {
 
 .day-modal-body {
   display: flex;
+  flex-direction: column;
   position: absolute;
   background-color: rgb(255, 255, 255);
   user-select: text;
+}
+
+.day-modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #003366;
+  color: #fff;
+}
+
+.day-close-modal-btn {
+  outline: 0;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
 }

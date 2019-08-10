@@ -17,6 +17,7 @@ export class ModalService {
     // if no stylingparams given, send empty object that will be init on the modal itself
 
     let defaultStylingValues: StylingParams = {
+      modalName: "My Modal",
       uniqueClass: "",
       width: "50vw",
       minWidth: "unset",
@@ -24,10 +25,14 @@ export class ModalService {
       height: "50vh",
       minHeight: "unset",
       maxHeight: "100%",
-      opacity: "0.5"
+      opacity: "0.5",
+      showHeader: true
     };
 
+    // if you send styling params, check each one, if param is not empty, send it, else, send default value.
+    // else, send all defaults.
     if(stylingParams) {
+      defaultStylingValues.modalName = stylingParams.modalName ? stylingParams.modalName : defaultStylingValues.modalName;
       defaultStylingValues.uniqueClass = stylingParams.uniqueClass ? stylingParams.uniqueClass : defaultStylingValues.uniqueClass;
       defaultStylingValues.width = stylingParams.width ? stylingParams.width : defaultStylingValues.width;
       defaultStylingValues.minWidth = stylingParams.minWidth ? stylingParams.minWidth : defaultStylingValues.minWidth;
@@ -36,20 +41,41 @@ export class ModalService {
       defaultStylingValues.minHeight = stylingParams.minHeight ? stylingParams.minHeight : defaultStylingValues.minHeight;
       defaultStylingValues.maxHeight = stylingParams.maxHeight ? stylingParams.maxHeight : defaultStylingValues.maxHeight;
       defaultStylingValues.opacity = stylingParams.opacity ? stylingParams.opacity : defaultStylingValues.opacity;
+      defaultStylingValues.showHeader = stylingParams.showHeader !== undefined ? stylingParams.showHeader : defaultStylingValues.showHeader;
     }
 
+    // combine compose params with styling
     const modalParams = {
       viewModel: composeParams.viewModel,
       view: composeParams.view,
       model: composeParams.model,
       styling: defaultStylingValues
     }
+
+    // push as a new modal
     this.modals.push(modalParams);
   }
 
-  closeModal(retVal?: any) {
+  /**
+   * Close this modal and send some data if you want
+   * @param retVal Send return value when closing a modal
+   */
+  closeModal(retVal?: any): Promise<{}> {
     this.modals.pop();
-    // TODO: return promise to use retval
+    return new Promise( (res, rej) => {
+      res(retVal);
+    });
+  }
+
+  /**
+   * Close all modals and also send data if you want.
+   * @param retVal Send return value when closing all modals
+   */
+  closeAllModals(retVal?: any): Promise<{}> {
+    this.modals = [];
+    return new Promise( (res, rej) => {
+      res(retVal);
+    });
   }
 
 }

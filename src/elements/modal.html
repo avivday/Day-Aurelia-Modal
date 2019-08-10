@@ -1,5 +1,9 @@
 <template>
   <div class="day-modal-body ${styling.uniqueClass}" css.bind="modalCSS">
+    <div class="day-modal-header" show.bind="styling.showHeader">
+      <span class="day-modal-name">${styling.modalName}</span>
+      <button class="day-close-modal-btn" click.delegate="closeModal()">X</button>
+    </div>
       <compose view-model.bind="viewModel" view.bind="view" model.bind="model">
   </div>
 </template>

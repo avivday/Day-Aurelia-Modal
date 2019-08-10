@@ -10,15 +10,16 @@ export class TestModal {
 
   styling: StylingParams = {
     minHeight: "300px",
-    width: "600px"
+    width: "600px",
+    showHeader: false
   };
 
-  open() {
+  openModal() {
     this.modalService.openModal({viewModel: "test-modal/inside-modal/inside-modal"}, this.styling);
   }
 
-  close() {
-    const objToSend = {1: "test", 2: "test"};
-    this.modalService.closeModal(objToSend);
+  closeWithData() {
+    this.modalService.closeModal(this.styling)
+    .then(data => console.log(data));
   }
 }

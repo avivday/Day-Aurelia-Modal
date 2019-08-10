@@ -6,8 +6,13 @@ export class InsideModal {
 
   constructor(private modalService: ModalService) {}
 
-  close() {
-    this.modalService.closeModal();
-  }
+  someData = {
+    name: "Some",
+    last: "Data"
+  };
 
+  closeAllAndSendData() {
+    this.modalService.closeAllModals(this.someData)
+    .then(data => console.log(data));
+  }
 }
