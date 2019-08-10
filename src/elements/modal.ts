@@ -29,12 +29,6 @@ export class Modal {
     }
   }
 
-  myData = {
-    name: "Aviv",
-    last: "Day"
-  };
-
-
   /**
    * Close this modal directly from html
    */
@@ -48,5 +42,4 @@ export class Modal {
   closeAllModals(): Promise<{}> {
     return this.modalService.closeAllModals();
   }
-
 }
