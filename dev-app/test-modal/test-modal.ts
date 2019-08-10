@@ -10,7 +10,7 @@ export class TestModal {
 
   styling: StylingParams = {
     minHeight: "300px",
-    width: "600px",
+    width: "600px"
   };
 
   open() {

@@ -13,7 +13,8 @@ export class ModalService {
     maxWidth: "100%",
     height: "50vh",
     minHeight: "32rem",
-    maxHeight: "100%"
+    maxHeight: "100%",
+    opacity: "0.5"
   }
 
   /**
