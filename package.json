@@ -1,12 +1,14 @@
 {
-  "name": "day-au-modal",
-  "description": "An Aurelia plugin project.",
-  "version": "0.1.0",
+  "name": "day-aurelia-modal",
+  "description": "Simple modal for aurelia framework.",
+  "version": "1.0.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/avivday/Day-Aurelia-Modal"
   },
-  "license": "UNLICENSED",
+  "author": "Aviv Day <avivday@gmail.com>",
+  "keywords": ["aurelia", "modal", "aurelia-modal", "prompt", "aurelia-framework", "aurelia-cli", "aurelia-ui", "aurelia-ux"],
+  "license": "MIT",
   "devDependencies": {
     "aurelia-bootstrapper": "^2.3.2",
     "aurelia-animator-css": "^1.0.4",
@@ -46,7 +48,6 @@
   },
   "main": "dist/commonjs/index.js",
   "module": "dist/native-modules/index.js",
-  "private": true,
   "files": [
     "dist"
   ]
