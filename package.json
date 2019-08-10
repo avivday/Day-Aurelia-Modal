@@ -1,13 +1,22 @@
 {
   "name": "day-aurelia-modal",
   "description": "Simple modal for aurelia framework.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/avivday/Day-Aurelia-Modal"
   },
   "author": "Aviv Day <avivday@gmail.com>",
-  "keywords": ["aurelia", "modal", "aurelia-modal", "prompt", "aurelia-framework", "aurelia-cli", "aurelia-ui", "aurelia-ux"],
+  "keywords": [
+    "aurelia",
+    "modal",
+    "aurelia-modal",
+    "prompt",
+    "aurelia-framework",
+    "aurelia-cli",
+    "aurelia-ui",
+    "aurelia-ux"
+  ],
   "license": "MIT",
   "devDependencies": {
     "aurelia-bootstrapper": "^2.3.2",
