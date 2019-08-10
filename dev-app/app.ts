@@ -9,6 +9,6 @@ export class App {
 
 
   open() {
-    this.modalService.openModal({viewModel: "test-modal/test-modal"});
+    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueClass: "my-modal-class"});
   }
 }

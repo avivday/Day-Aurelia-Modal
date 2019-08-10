@@ -1,5 +1,6 @@
 export interface StylingParams {
 
+  uniqueClass?: string;
   minHeight?: string;
   maxHeight?: string;
   height?: string;
