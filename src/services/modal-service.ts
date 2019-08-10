@@ -28,21 +28,9 @@ export class ModalService {
       opacity: "0.5",
       showHeader: true
     };
-
-    // if you send styling params, check each one, if param is not empty, send it, else, send default value.
-    // else, send all defaults.
-    if(stylingParams) {
-      defaultStylingValues.modalName = stylingParams.modalName || defaultStylingValues.modalName;
-      defaultStylingValues.uniqueClass = stylingParams.uniqueClass || defaultStylingValues.uniqueClass;
-      defaultStylingValues.width = stylingParams.width || defaultStylingValues.width;
-      defaultStylingValues.minWidth = stylingParams.minWidth || defaultStylingValues.minWidth;
-      defaultStylingValues.maxWidth = stylingParams.maxWidth || defaultStylingValues.maxWidth;
-      defaultStylingValues.height = stylingParams.height || defaultStylingValues.height;
-      defaultStylingValues.minHeight = stylingParams.minHeight || defaultStylingValues.minHeight;
-      defaultStylingValues.maxHeight = stylingParams.maxHeight || defaultStylingValues.maxHeight;
-      defaultStylingValues.opacity = stylingParams.opacity || defaultStylingValues.opacity;
-      defaultStylingValues.showHeader = stylingParams.showHeader !== undefined ? stylingParams.showHeader : defaultStylingValues.showHeader;
-    }
+    
+    // combine the given values with the defaults.
+    defaultStylingValues = Object.assign(defaultStylingValues, stylingParams);
 
     // combine compose params with styling
     const modalParams = {
