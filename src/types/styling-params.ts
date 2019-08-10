@@ -1,8 +1,11 @@
 export interface StylingParams {
 
-  height?: string;
-  width?: string;
   minHeight?: string;
+  maxHeight?: string;
+  height?: string;
   minWidth?: string;
+  maxWidth?: string;
+  width?: string;
+  opacity?: string;
 
 }
