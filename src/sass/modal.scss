@@ -44,8 +44,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 8px;
-  background-color: #003366;
-  color: #fff;
 }
 
 .day-modal-header-functions {
@@ -53,11 +51,11 @@ body {
   flex-direction: row;
 }
 
-.day-close-modal-btn {
+.day-header-modal-btn {
   outline: 0;
   border: none;
   background: transparent;
-  color: #fff;
+  color: inherit;
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;

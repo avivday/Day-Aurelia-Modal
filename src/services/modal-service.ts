@@ -2,7 +2,6 @@ import { StylingParams } from 'types/styling-params';
 import { ComposeParams } from "types/compose-params";
 
 export class ModalService {
-
   // modal list (for nested modals)
   modals: ComposeParams[] = [];
 
@@ -15,10 +14,11 @@ export class ModalService {
   openModal(composeParams: ComposeParams, stylingParams?: StylingParams) {
     // push modal params to array including the style
     // if no stylingparams given, send empty object that will be init on the modal itself
-
+    
     let defaultStylingValues: StylingParams = {
       modalName: "My Modal",
-      uniqueClass: "",
+      uniqueBodyClass: "",
+      uniqueHeaderClass: "",
       width: "50vw",
       minWidth: "unset",
       maxWidth: "100%",
@@ -26,6 +26,8 @@ export class ModalService {
       minHeight: "unset",
       maxHeight: "100%",
       opacity: "0.5",
+      headerBackgroundColor: "#003366",
+      headerColor: "#fff",
       maximizeHeight: "95%",
       maximizeWidth: "95%",
       showHeader: true,

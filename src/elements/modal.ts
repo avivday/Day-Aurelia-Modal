@@ -31,6 +31,14 @@ export class Modal {
     }
   }
 
+  @computedFrom("styling")
+  get modalHeaderCSS() {
+    return {
+      backgroundColor: this.styling.headerBackgroundColor,
+      color: this.styling.headerColor
+    }
+  }
+
   /**
    * Close this modal directly from html
    */

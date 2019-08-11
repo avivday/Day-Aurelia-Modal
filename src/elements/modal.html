@@ -1,10 +1,10 @@
 <template>
   <div class="day-modal-body ${styling.uniqueClass}" css.bind="modalCSS">
-    <div class="day-modal-header" show.bind="styling.showHeader">
+    <div class="day-modal-header" css.bind="modalHeaderCSS" show.bind="styling.showHeader">
       <span class="day-modal-name">${styling.modalName}</span>
       <div class="day-modal-header-functions">
-        <button class="day-close-modal-btn" click.delegate="maximize = !maximize" if.bind="styling.showMaximize">M</button>
-        <button class="day-close-modal-btn" click.delegate="closeModal()">X</button>
+        <button class="day-header-modal-btn" click.delegate="maximize = !maximize" if.bind="styling.showMaximize">M</button>
+        <button class="day-header-modal-btn" click.delegate="closeModal()">X</button>
       </div>
     </div>
       <compose view-model.bind="viewModel" view.bind="view" model.bind="model">

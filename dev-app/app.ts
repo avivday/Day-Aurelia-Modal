@@ -1,4 +1,3 @@
-import { StylingParams } from 'types/styling-params';
 import { autoinject } from 'aurelia-framework';
 import { ModalService } from "services/modal-service";
 
@@ -9,6 +8,6 @@ export class App {
 
 
   open() {
-    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueClass: "my-modal-class"});
+    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueBodyClass: "my-modal-class"});
   }
 }
