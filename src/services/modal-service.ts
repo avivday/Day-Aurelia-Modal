@@ -26,9 +26,12 @@ export class ModalService {
       minHeight: "unset",
       maxHeight: "100%",
       opacity: "0.5",
-      showHeader: true
+      maximizeHeight: "95%",
+      maximizeWidth: "95%",
+      showHeader: true,
+      showMaximize: true
     };
-    
+
     // combine the given values with the defaults.
     defaultStylingValues = Object.assign(defaultStylingValues, stylingParams);
 

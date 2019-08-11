@@ -11,6 +11,10 @@ export interface StylingParams {
   width?: string;
   opacity?: string;
 
+  maximizeHeight?: string;
+  maximizeWidth?: string;
+
   showHeader?: boolean;
+  showMaximize?: boolean;
 
 }

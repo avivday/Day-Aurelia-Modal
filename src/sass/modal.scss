@@ -35,6 +35,7 @@ body {
   position: absolute;
   background-color: rgb(255, 255, 255);
   user-select: text;
+  transition: all 0.25s linear;
 }
 
 .day-modal-header {
@@ -45,6 +46,11 @@ body {
   padding: 8px;
   background-color: #003366;
   color: #fff;
+}
+
+.day-modal-header-functions {
+  display: flex;
+  flex-direction: row;
 }
 
 .day-close-modal-btn {

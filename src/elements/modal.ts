@@ -15,17 +15,19 @@ export class Modal {
   @bindable()
   public styling: StylingParams;
 
+  public maximize: boolean = false;
+
   constructor(private modalService: ModalService) {}
 
-  @computedFrom("styling")
+  @computedFrom("styling", "maximize")
   get modalCSS() {
     return {
       minHeight: this.styling.minHeight,
       maxHeight: this.styling.maxHeight,
-      height: this.styling.height,
+      height: this.maximize ? this.styling.maximizeHeight : this.styling.height,
       minWidth: this.styling.minWidth,
       maxWidth: this.styling.maxWidth,
-      width: this.styling.width
+      width: this.maximize ? this.styling.maximizeWidth : this.styling.width
     }
   }
 
