@@ -1,5 +1,5 @@
-import { ModalService } from '../services/modal-service';
-import { StylingParams } from '../types/styling-params';
+import { ModalService } from 'services/modal-service';
+import { StylingParams } from 'types/styling-params';
 import { bindable, computedFrom, autoinject } from 'aurelia-framework';
 
 @autoinject()
