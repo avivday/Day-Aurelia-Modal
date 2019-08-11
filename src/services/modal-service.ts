@@ -1,11 +1,6 @@
 import { StylingParams } from 'types/styling-params';
 import { ComposeParams } from "types/compose-params";
-
-interface ModalInstance
-{
-  composeParams: ComposeParams,
-  modalResolveHandler: any
-}
+import { ModalInstance } from 'types/modal-instance';
 
 export class ModalService {
   // modal list (for nested modals)
@@ -20,9 +15,9 @@ export class ModalService {
   openModal(composeParams: ComposeParams, stylingParams?: StylingParams) {
     // push modal params to array including the style
     // if no stylingparams given, send empty object that will be init on the modal itself
-    
+
     let defaultStylingValues: StylingParams = {
-      modalName: "My Modal",
+      modalName: "Day Modal",
       uniqueBodyClass: "",
       uniqueHeaderClass: "",
       width: "50vw",

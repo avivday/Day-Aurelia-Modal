@@ -10,7 +10,7 @@ export class App {
   open() {
     this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueBodyClass: "my-modal-class", headerBackgroundColor: "#000", headerColor: "#fff"})
     .then(data => {
-      console.log("outer was closed", data);
+      console.log("First modal closed, here is the data you chose to send:", data);
     });
   }
 }

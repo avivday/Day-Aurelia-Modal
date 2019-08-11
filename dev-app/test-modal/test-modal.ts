@@ -17,7 +17,7 @@ export class TestModal {
   openModal() {
     this.modalService.openModal({viewModel: "test-modal/inside-modal/inside-modal"}, this.styling)
     .then(data => {
-      console.log("inner was closed", data);
+      console.log("Inside modal was closed, stacked data is here:", data);
     });
   }
 
