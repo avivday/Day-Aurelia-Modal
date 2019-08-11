@@ -8,6 +8,6 @@ export class App {
 
 
   open() {
-    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueBodyClass: "my-modal-class"});
+    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {uniqueBodyClass: "my-modal-class", headerBackgroundColor: "#000", headerColor: "#fff"});
   }
 }

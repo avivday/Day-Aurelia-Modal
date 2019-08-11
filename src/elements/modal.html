@@ -1,6 +1,6 @@
 <template>
-  <div class="day-modal-body ${styling.uniqueClass}" css.bind="modalCSS">
-    <div class="day-modal-header" css.bind="modalHeaderCSS" show.bind="styling.showHeader">
+  <div class="day-modal-body ${styling.uniqueBodyClass}" css.bind="modalCSS">
+    <div class="day-modal-header ${styling.uniqueHeaderClass}" css.bind="modalHeaderCSS" show.bind="styling.showHeader">
       <span class="day-modal-name">${styling.modalName}</span>
       <div class="day-modal-header-functions">
         <button class="day-header-modal-btn" click.delegate="maximize = !maximize" if.bind="styling.showMaximize">M</button>
