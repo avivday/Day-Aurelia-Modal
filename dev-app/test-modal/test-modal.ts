@@ -15,11 +15,13 @@ export class TestModal {
   };
 
   openModal() {
-    this.modalService.openModal({viewModel: "test-modal/inside-modal/inside-modal"}, this.styling);
+    this.modalService.openModal({viewModel: "test-modal/inside-modal/inside-modal"}, this.styling)
+    .then(data => {
+      console.log("inner was closed", data);
+    });
   }
 
   closeWithData() {
-    this.modalService.closeModal(this.styling)
-    .then(data => console.log(data));
+    this.modalService.closeModal(this.styling);
   }
 }

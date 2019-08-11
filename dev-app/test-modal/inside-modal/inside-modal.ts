@@ -12,7 +12,6 @@ export class InsideModal {
   };
 
   closeAllAndSendData() {
-    this.modalService.closeAllModals(this.someData)
-    .then(data => console.log(data));
+    this.modalService.closeAllModals(this.someData);
   }
 }

@@ -1,9 +1,15 @@
 import { StylingParams } from 'types/styling-params';
 import { ComposeParams } from "types/compose-params";
 
+interface ModalInstance
+{
+  composeParams: ComposeParams,
+  modalResolveHandler: any
+}
+
 export class ModalService {
   // modal list (for nested modals)
-  modals: ComposeParams[] = [];
+  modals: ModalInstance[] = [];
 
 
   /**
@@ -45,30 +51,34 @@ export class ModalService {
       styling: defaultStylingValues
     }
 
-    // push as a new modal
-    this.modals.push(modalParams);
+    return new Promise(resolve => {
+
+      // push as a new modal
+      this.modals.push({
+        composeParams: modalParams,
+        modalResolveHandler: resolve
+      });
+    })
   }
 
   /**
    * Close this modal and send some data if you want
    * @param retVal Send return value when closing a modal
    */
-  closeModal(retVal?: any): Promise<{}> {
-    this.modals.pop();
-    return new Promise( (res, rej) => {
-      res(retVal);
-    });
+  closeModal(retVal?: any){
+    const instance: ModalInstance = this.modals.pop();
+    instance.modalResolveHandler(retVal);
   }
 
   /**
    * Close all modals and also send data if you want.
    * @param retVal Send return value when closing all modals
    */
-  closeAllModals(retVal?: any): Promise<{}> {
-    this.modals = [];
-    return new Promise( (res, rej) => {
-      res(retVal);
-    });
+  closeAllModals(retVal?: any) {
+    while(this.modals.length)
+    {
+      this.closeModal(retVal);
+    }
   }
 
 }
