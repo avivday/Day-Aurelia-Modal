@@ -42,14 +42,14 @@ export class Modal {
   /**
    * Close this modal directly from html
    */
-  closeModal(): Promise<{}> {
+  closeModal() {
     return this.modalService.closeModal();
   }
 
   /**
    * Close all modals directly from html
    */
-  closeAllModals(): Promise<{}> {
+  closeAllModals() {
     return this.modalService.closeAllModals();
   }
 }

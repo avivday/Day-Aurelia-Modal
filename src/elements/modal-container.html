@@ -2,6 +2,6 @@
   <require from="./modal"></require>
   <div class="day-modal-container" if.bind="modalService.modals.length">
       <modal repeat.for="modal of modalService.modals" class="day-modal-opacity" css="background-color: rgba(0,0,0, ${modal.styling.opacity})"
-      view-model.bind="modal.viewModel" view.bind="modal.view" model.bind="modal.model" styling.bind="modal.styling"></modal>
+      view-model.bind="modal.composeParams.viewModel" view.bind="modal.composeParams.view" model.bind="modal.composeParams.model" styling.bind="modal.composeParams.styling"></modal>
   </div>
 </template>
