@@ -28,7 +28,7 @@ export class ModalService {
       height: "50vh",
       minHeight: "unset",
       maxHeight: "100%",
-      headerBackgroundColor: "#003366",
+      headerBackground: "#003366",
       headerColor: "#fff",
       maximizeHeight: "95%",
       maximizeWidth: "95%",

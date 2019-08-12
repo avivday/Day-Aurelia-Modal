@@ -20,7 +20,7 @@ export interface StylingParams {
   width?: string;
 
   // header styling
-  headerBackgroundColor?: string;
+  headerBackground?: string;
   headerColor?: string;
 
   // maximize sizes

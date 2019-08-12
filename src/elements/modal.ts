@@ -35,7 +35,7 @@ export class Modal {
   @computedFrom("styling")
   get modalHeaderCSS() {
     return {
-      backgroundColor: this.styling.headerBackgroundColor,
+      background: this.styling.headerBackground,
       color: this.styling.headerColor
     }
   }
