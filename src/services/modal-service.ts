@@ -32,7 +32,9 @@ export class ModalService {
       maximizeHeight: "95%",
       maximizeWidth: "95%",
       showHeader: true,
-      showMaximize: true
+      showMaximize: true,
+      closeBtnFontClasses: "",
+      maximizeBtnFontClasses: ""
     };
 
     // combine the given values with the defaults.
