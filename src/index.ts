@@ -6,3 +6,7 @@ export function configure(config: FrameworkConfiguration) {
     PLATFORM.moduleName('./elements/modal-container')
   ]);
 }
+
+export * from './services/modal-service';
+export * from './types/compose-params';
+export * from 'types/styling-params';
