@@ -1,6 +1,6 @@
-import { StylingParams } from 'types/styling-params';
-import { ComposeParams } from "types/compose-params";
-import { ModalInstance } from 'types/modal-instance';
+import { StylingParams } from '../types/styling-params';
+import { ComposeParams } from '../types/compose-params';
+import { ModalInstance } from '../types/modal-instance';
 
 export class ModalService {
   // modal list (for nested modals)
