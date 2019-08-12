@@ -10,7 +10,7 @@
     "bindingBehaviors": "../src/binding-behaviors",
     "services": "../src/services",
     "types": "../src/types",
-    "sass": "../src/sass"
+    "styles": "../src/styles"
   },
   "transpiler": {
     "id": "typescript",
