@@ -17,7 +17,7 @@ export class ModalService {
     // if no stylingparams given, send empty object that will be init on the modal itself
 
     let defaultStylingValues: StylingParams = {
-      dir: "ltr",
+      direction: "ltr",
       modalName: "Day Modal",
       uniqueOpacityClass: "",
       uniqueBodyClass: "",

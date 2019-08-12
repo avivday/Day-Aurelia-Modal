@@ -22,6 +22,7 @@ export class Modal {
   @computedFrom("styling", "maximize")
   get modalCSS() {
     return {
+      direction: this.styling.direction,
       minHeight: this.styling.minHeight,
       maxHeight: this.styling.maxHeight,
       height: this.maximize ? this.styling.maximizeHeight : this.styling.height,

@@ -1,7 +1,7 @@
 export interface StylingParams {
 
   // direction: ltr / rtl
-  dir?: string;
+  direction?: string;
 
   // modal name for header
   modalName?: string;
