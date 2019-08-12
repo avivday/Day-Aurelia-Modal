@@ -9,4 +9,4 @@ export function configure(config: FrameworkConfiguration) {
 
 export * from './services/modal-service';
 export * from './types/compose-params';
-export * from 'types/styling-params';
+export * from './types/styling-params';
