@@ -1,5 +1,8 @@
 export interface StylingParams {
 
+  // direction: ltr / rtl
+  dir?: string;
+
   // modal name for header
   modalName?: string;
   
@@ -29,6 +32,8 @@ export interface StylingParams {
   showMaximize?: boolean;
 
   // use class based fonts like font-awesome for modal header functions ex. 'fas fa-times'
-  closeBtnFontClasses: string;
-  maximizeBtnFontClasses: string;
+  closeBtnFontClasses?: string;
+  closeBtnText?: string;
+  maximizeBtnFontClasses?: string;
+  maximizeBtnText?: string;
 }

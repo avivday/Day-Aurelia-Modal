@@ -17,6 +17,7 @@ export class ModalService {
     // if no stylingparams given, send empty object that will be init on the modal itself
 
     let defaultStylingValues: StylingParams = {
+      dir: "ltr",
       modalName: "Day Modal",
       uniqueOpacityClass: "",
       uniqueBodyClass: "",
@@ -34,7 +35,9 @@ export class ModalService {
       showHeader: true,
       showMaximize: true,
       closeBtnFontClasses: "",
-      maximizeBtnFontClasses: ""
+      closeBtnText: "Close",
+      maximizeBtnFontClasses: "",
+      maximizeBtnText: "Max"
     };
 
     // combine the given values with the defaults.
