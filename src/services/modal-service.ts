@@ -34,6 +34,7 @@ export class ModalService {
       maximizeWidth: "95%",
       showHeader: true,
       showMaximize: true,
+      closeWhenOverlayClicked: true,
       closeBtnFontClasses: "",
       closeBtnText: "Close",
       maximizeBtnFontClasses: "",

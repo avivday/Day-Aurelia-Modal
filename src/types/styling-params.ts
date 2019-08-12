@@ -31,6 +31,9 @@ export interface StylingParams {
   showHeader?: boolean;
   showMaximize?: boolean;
 
+  // Close when clicking on the overlay
+  closeWhenOverlayClicked?: boolean;
+
   // use class based fonts like font-awesome for modal header functions ex. 'fas fa-times'
   closeBtnFontClasses?: string;
   closeBtnText?: string;

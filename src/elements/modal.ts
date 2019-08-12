@@ -53,4 +53,8 @@ export class Modal {
   closeAllModals() {
     return this.modalService.closeAllModals();
   }
+
+  preventClosingWhenOverlayClicked(event) {
+    event.stopPropagation();
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="day-modal-body ${styling.uniqueBodyClass}" css.bind="modalCSS">
+  <div class="day-modal-body ${styling.uniqueBodyClass}" css.bind="modalCSS" click.delegate="preventClosingWhenOverlayClicked($event)">
     <div class="day-modal-header ${styling.uniqueHeaderClass}" css.bind="modalHeaderCSS" show.bind="styling.showHeader">
       <span class="day-modal-name">${styling.modalName}</span>
       <div class="day-modal-header-functions">
