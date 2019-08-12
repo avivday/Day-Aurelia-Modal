@@ -4,10 +4,10 @@
       <span class="day-modal-name">${styling.modalName}</span>
       <div class="day-modal-header-functions">
         <button class="day-header-modal-btn ${styling.maximizeBtnFontClasses}" click.delegate="maximize = !maximize" if.bind="styling.showMaximize">
-          <span show.bind="${styling.maximizeBtnText}">${styling.maximizeBtnText}</span>
+          <span show.bind="styling.maximizeBtnText">${styling.maximizeBtnText}</span>
         </button>
         <button class="day-header-modal-btn ${styling.closeBtnFontClasses}" click.delegate="closeModal()">
-          <span show.bind="${styling.closeBtnText}">${styling.closeBtnText}</span>
+          <span show.bind="styling.closeBtnText">${styling.closeBtnText}</span>
         </button>
       </div>
     </div>
