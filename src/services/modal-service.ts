@@ -18,6 +18,7 @@ export class ModalService {
 
     let defaultStylingValues: StylingParams = {
       modalName: "Day Modal",
+      uniqueOpacityClass: "",
       uniqueBodyClass: "",
       uniqueHeaderClass: "",
       width: "50vw",
@@ -26,7 +27,6 @@ export class ModalService {
       height: "50vh",
       minHeight: "unset",
       maxHeight: "100%",
-      opacity: "0.5",
       headerBackgroundColor: "#003366",
       headerColor: "#fff",
       maximizeHeight: "95%",

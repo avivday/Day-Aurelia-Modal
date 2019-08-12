@@ -1,7 +1,7 @@
 <template>
   <require from="./modal"></require>
   <div class="day-modal-container" if.bind="modalService.modals.length">
-      <modal repeat.for="modal of modalService.modals" class="day-modal-opacity" css="background-color: rgba(0,0,0, ${modal.styling.opacity})"
+      <modal repeat.for="modal of modalService.modals" class="day-modal-opacity ${modal.composeParams.styling.uniqueOpacityClass}"
       view-model.bind="modal.composeParams.viewModel" view.bind="modal.composeParams.view" model.bind="modal.composeParams.model" styling.bind="modal.composeParams.styling"></modal>
   </div>
 </template>

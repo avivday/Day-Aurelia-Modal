@@ -1,6 +1,8 @@
 export interface StylingParams {
 
   modalName?: string;
+  
+  uniqueOpacityClass?: string;
   uniqueBodyClass?: string;
   uniqueHeaderClass?: string;
 
@@ -10,7 +12,6 @@ export interface StylingParams {
   minWidth?: string;
   maxWidth?: string;
   width?: string;
-  opacity?: string;
 
   headerBackgroundColor?: string;
   headerColor?: string;
