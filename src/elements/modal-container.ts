@@ -11,6 +11,10 @@ export class ModalContainer {
         $event.keyCode === 27 ? this.modalService.closeModal() : null;
       }
     }
+    
+    closeModalOnOverlayClick(closeWhenOverlayClicked) {
+      closeWhenOverlayClicked ? this.modalService.closeModal() : null;
+    }
 
 
 }
