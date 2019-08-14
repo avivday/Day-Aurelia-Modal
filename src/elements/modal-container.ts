@@ -13,6 +13,10 @@ export class ModalContainer {
       
       return true;
     }
+    
+    closeModalOnOverlayClick(closeWhenOverlayClicked) {
+      closeWhenOverlayClicked ? this.modalService.closeModal() : null;
+    }
 
 
 }

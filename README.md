@@ -1,7 +1,7 @@
 # `day-au-modal`
 
-# npm
-https://www.npmjs.com/package/day-aurelia-modal
+# docs and demo - in progress
+https://avivday.github.io/Day-Aurelia-Modal/
 
 # Getting Started
 Install using:

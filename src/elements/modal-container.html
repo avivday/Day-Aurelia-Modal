@@ -2,7 +2,7 @@
   <require from="./modal"></require>
   <div class="day-modal-container" if.bind="modalService.modals.length" css="${modal.composeParams.styling.direction}">
       <modal repeat.for="modal of modalService.modals"  keydown.delegate="closeModalWhenEscapeClicked(modal.composeParams.styling.closeWhenEscapeClicked, $event)" tabindex="0" focus.one-time="true"
-      click.delegate="modalService.closeModal()" class="day-modal-opacity ${modal.composeParams.styling.uniqueOpacityClass}"
+      click.delegate="closeModalOnOverlayClick(modal.composeParams.styling.closeWhenOverlayClicked)" class="day-modal-opacity ${modal.composeParams.styling.uniqueOpacityClass}"
       view-model.bind="modal.composeParams.viewModel" view.bind="modal.composeParams.view" model.bind="modal.composeParams.model" styling.bind="modal.composeParams.styling"></modal>
   </div>
 </template>
