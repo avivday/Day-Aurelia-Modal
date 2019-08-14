@@ -22,6 +22,9 @@ try it on "dev-app" (run with: au run).
 
 When you complete your excellent work, simply create a pull request.
 
+## Change Log
+**1.7.0** - ***15.08.2019*** - First stable version for public use + full documentation.
+
 ## Authors
 
 * **Aviv Day** - *Plugin Developer* - avivday@gmail.com
