@@ -28,7 +28,14 @@ export class Modal {
       height: this.maximize ? this.styling.maximizeHeight : this.styling.height,
       minWidth: this.styling.minWidth,
       maxWidth: this.styling.maxWidth,
-      width: this.maximize ? this.styling.maximizeWidth : this.styling.width
+      width: this.maximize ? this.styling.maximizeWidth : this.styling.width 
+    }
+  }
+
+  @computedFrom("styling")
+  get modalOverflow() {
+    return {
+      overflow: this.styling.modalOverflow
     }
   }
 

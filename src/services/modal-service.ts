@@ -19,6 +19,7 @@ export class ModalService {
     let defaultStylingValues: StylingParams = {
       direction: "ltr",
       modalName: "Day Modal",
+      modalOverflow: "auto",
       uniqueOpacityClass: "",
       uniqueBodyClass: "",
       uniqueHeaderClass: "",

@@ -5,6 +5,9 @@ export interface StylingParams {
 
   // modal name for header
   modalName?: string;
+
+  // overflow in your modal
+  modalOverflow?: string;
   
   // unique classes
   uniqueOpacityClass?: string;
