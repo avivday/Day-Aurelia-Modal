@@ -10,6 +10,8 @@ export class ModalContainer {
       if(closeWhenEscapeClicked) {
         $event.keyCode === 27 ? this.modalService.closeModal() : null;
       }
+      
+      return true;
     }
 
 
