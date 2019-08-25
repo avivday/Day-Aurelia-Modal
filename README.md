@@ -32,4 +32,4 @@ When you complete your excellent work, simply create a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [MIT-LICENSE.md](license/MIT-LICENSE.md) file for details
+**This project is licensed under the MIT License - see the [MIT-LICENSE.md](license/MIT-LICENSE.md) file for details**
