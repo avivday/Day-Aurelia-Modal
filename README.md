@@ -1,5 +1,5 @@
 # Day Aurelia Modal
-### Current Version: 1.8.0
+### Current Version: 1.8.2
 
 Day-Aurelia-Modal - aurelia-framework modal package.
 
@@ -11,7 +11,7 @@ npm install day-aurelia-modal
 yarn add day-aurelia-modal
 ```
 
-## Docs & Demo (1.8.0)
+## Docs & Demo (1.8.2)
 https://avivday.github.io/Day-Aurelia-Modal/
 
 
