@@ -8,7 +8,7 @@ export class App {
 
 
   open() {
-    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {direction: "rtl"})
+    this.modalService.openModal({viewModel: "test-modal/test-modal"}, {direction: "rtl", closeWhenOverlayClicked: false})
     .then(data => {
       console.log("First modal closed, here is the data you chose to send:", data);
     });

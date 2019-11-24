@@ -1,34 +1,11 @@
 <template>
   <h1>Test Modal</h1>
   <input type="text">
-  <br>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit explicabo repudiandae illum nulla sequi sint quod perferendis vitae maxime dolore voluptate hic, ex repellendus facilis in culpa illo, voluptatibus facere!
+  
+  <label repeat.for="tag of tags">
+    <input type="checkbox" value.bind="tag" checked.bind="selectedTags">
+  </label>
+
   <button click.delegate="openModal()">Stacked Modals</button>
   <button click.delegate="closeModal()">Close Only</button>
   <button click.delegate="closeWithData()">Close + Data</button>

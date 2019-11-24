@@ -63,5 +63,6 @@ export class Modal {
 
   preventClosingWhenOverlayClicked(event) {
     event.stopPropagation();
+    return true;
   }
 }

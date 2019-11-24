@@ -7,7 +7,9 @@ export class TestModal {
 
   constructor(private modalService: ModalService) { }
 
-
+  tags = ["a", "b", "c"];
+  selectedTags = [];
+  
   styling: StylingParams = {
     minHeight: "300px",
     width: "600px",
